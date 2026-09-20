@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Resources | Union Catalog Philippines</title>
+<meta name="description" content="Search the unified OPAC, browse participating Philippine libraries, and find guides and FAQs for using Union Catalog Philippines." />
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">UC</span>
+      <span class="brand-text">
+        <strong>Union Catalog PH</strong>
+        <span>Philippine Libraries United</span>
+      </span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="resources.html">Resources</a></li>
+      <li><a href="contact.html">Contact Us</a></li>
+      <li class="nav-cta"><a href="contact.html" class="btn btn-primary">Join the Catalog</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero" style="padding:64px 0 72px;">
+    <div class="container">
+      <span class="eyebrow" style="color:var(--gold)">Resources</span>
+      <h1 style="max-width:24ch;">Everything you need to search and use the union catalog</h1>
+      <p class="lede">
+        Preview the unified OPAC, browse participating libraries by type and region, and
+        find guides for getting the most out of Union Catalog Philippines.
+      </p>
+    </div>
+  </section>
+
+  <!-- OPAC search -->
+  <section class="section" id="catalog">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Unified OPAC</span>
+        <h2>Search across every participating library</h2>
+        <p>This is a preview of the catalog search experience — enter a term to see how it will work once connected to live library records.</p>
+      </div>
+      <div class="search-card" style="max-width:680px; margin:0 auto;">
+        <h3>Search the Union Catalog</h3>
+        <p class="hint">Search by title, author, subject, or ISBN across all partner libraries.</p>
+        <form id="opac-search" class="search-form">
+          <input type="text" name="q" placeholder="e.g. Philippine folklore, agrarian reform..." aria-label="Search the catalog" />
+          <button type="submit">Search</button>
+        </form>
+        <div class="chip-row">
+          <span class="chip">Academic Theses</span>
+          <span class="chip">Filipiniana</span>
+          <span class="chip">Government Publications</span>
+          <span class="chip">K-12 Learning Materials</span>
+          <span class="chip">Journals &amp; Periodicals</span>
+        </div>
+        <p id="opac-feedback" class="form-note" style="margin-top:14px;">Enter a title, author, or subject to preview a search.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resource guides -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Guides &amp; Materials</span>
+        <h2>Resources for students, educators, and librarians</h2>
+      </div>
+      <div class="grid grid-3">
+        <div class="card resource-card">
+          <span class="badge">Guide</span>
+          <h3>Using the Union Catalog</h3>
+          <p>A step-by-step walkthrough of searching, filtering, and requesting materials across partner libraries.</p>
+          <a href="#" class="link">Read the guide &rarr;</a>
+        </div>
+        <div class="card resource-card">
+          <span class="badge">For Librarians</span>
+          <h3>Metadata Contribution Standards</h3>
+          <p>Guidelines for preparing and submitting your library's catalog records for inclusion in the union catalog.</p>
+          <a href="#" class="link">View standards &rarr;</a>
+        </div>
+        <div class="card resource-card">
+          <span class="badge">For Educators</span>
+          <h3>Classroom &amp; Research Toolkit</h3>
+          <p>Curated collections and citation tips to help teachers and students make the most of shared library resources.</p>
+          <a href="#" class="link">Download toolkit &rarr;</a>
+        </div>
+        <div class="card resource-card">
+          <span class="badge">Filipiniana</span>
+          <h3>Philippine Studies Collection</h3>
+          <p>A spotlight collection of Filipiniana materials — literature, history, and culture — drawn from partner archives.</p>
+          <a href="#" class="link">Browse collection &rarr;</a>
+        </div>
+        <div class="card resource-card">
+          <span class="badge">Open Access</span>
+          <h3>Theses &amp; Dissertations Index</h3>
+          <p>A growing index of undergraduate and graduate research contributed by academic library partners nationwide.</p>
+          <a href="#" class="link">Search index &rarr;</a>
+        </div>
+        <div class="card resource-card">
+          <span class="badge">API</span>
+          <h3>Developer &amp; Data Access</h3>
+          <p>Documentation for institutions integrating their own systems with the union catalog's shared search index.</p>
+          <a href="#" class="link">View documentation &rarr;</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Participating libraries -->
+  <section class="section" id="libraries">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Partner Network</span>
+        <h2>Participating libraries</h2>
+        <p>A sample of the institutions contributing to the union catalog, spanning academic, public, special, and national collections.</p>
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Library</th>
+              <th>Type</th>
+              <th>Region</th>
+              <th>Status</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>National Library of the Philippines</td>
+              <td><span class="tag">National</span></td>
+              <td>NCR — Manila</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>University of the Philippines Diliman University Library</td>
+              <td><span class="tag">Academic</span></td>
+              <td>NCR — Quezon City</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Ateneo de Manila University Rizal Library</td>
+              <td><span class="tag">Academic</span></td>
+              <td>NCR — Quezon City</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>University of Santo Tomas Miguel de Benavides Library</td>
+              <td><span class="tag">Academic</span></td>
+              <td>NCR — Manila</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Cebu City Public Library</td>
+              <td><span class="tag">Public</span></td>
+              <td>Region VII — Cebu</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>University of San Carlos Learning Resource Center</td>
+              <td><span class="tag">Academic</span></td>
+              <td>Region VII — Cebu</td>
+              <td>Onboarding</td>
+            </tr>
+            <tr>
+              <td>Mindanao State University Library</td>
+              <td><span class="tag">Academic</span></td>
+              <td>Region X — Marawi</td>
+              <td>Onboarding</td>
+            </tr>
+            <tr>
+              <td>Supreme Court of the Philippines Library</td>
+              <td><span class="tag">Special</span></td>
+              <td>NCR — Manila</td>
+              <td>Active</td>
+            </tr>
+            <tr>
+              <td>Baguio City Public Library</td>
+              <td><span class="tag">Public</span></td>
+              <td>CAR — Baguio</td>
+              <td>Onboarding</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="form-note" style="margin-top:16px;">Is your library not listed yet? <a href="contact.html" style="color:var(--blue); font-weight:600;">Get in touch about joining the network</a>.</p>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section section-alt" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">FAQs</span>
+        <h2>Frequently asked questions</h2>
+      </div>
+      <div style="max-width:760px; margin:0 auto;">
+        <div class="faq-item open">
+          <button class="faq-question">
+            What is Union Catalog Philippines?
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>It's a curated, unified OPAC that combines the catalogs of participating Philippine libraries — academic, public, special, and national — into a single searchable index for education and research.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Can I borrow a book directly through the union catalog?
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>The catalog helps you discover which library holds a title and how to access it. Borrowing and lending policies remain with each individual library.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            How can my library join the network?
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Reach out through our Contact page. Our team will walk you through metadata standards and the onboarding process for contributing your catalog.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Is Union Catalog Philippines free to use?
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes. The unified OPAC is built to support Philippine education and is free for students, educators, researchers, and the general public to use.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-question">
+            Which regions are currently covered?
+            <span class="plus">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>We're onboarding libraries region by region, starting with major academic and public libraries in NCR, Luzon, Visayas, and Mindanao, with nationwide coverage as our goal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="brand" style="margin-bottom:14px;">
+          <span class="brand-mark">UC</span>
+          <span class="brand-text" style="color:#fff;">
+            <strong style="color:#fff;">Union Catalog PH</strong>
+            <span>Philippine Libraries United</span>
+          </span>
+        </div>
+        <p>A curation of Philippine libraries and a unified OPAC supporting education nationwide.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="resources.html">Resources</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="resources.html#catalog">Search the Catalog</a></li>
+          <li><a href="resources.html#libraries">Partner Libraries</a></li>
+          <li><a href="resources.html#faq">FAQs</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li>info@unioncatalog.ph</li>
+          <li>+63 (2) 8123 4567</li>
+          <li>Manila, Philippines</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>&copy; <span id="year"></span> Union Catalog Philippines. All rights reserved.</span>
+      <span>Built for Philippine education.</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
