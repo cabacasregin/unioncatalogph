@@ -13,13 +13,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v5
 
-      - name: Copy landing page to VPS
+      - name: Copy site to VPS
         env:
           VPS_HOST: ${{ secrets.VPS_HOST }}
           VPS_USER: ${{ secrets.VPS_USER }}
           VPS_SSH_KEY: ${{ secrets.VPS_SSH_KEY }}
         run: |
+          mkdir -p "$HOME/.ssh"
           printf '%s\n' "$VPS_SSH_KEY" > "$HOME/.ssh/id_ed25519"
           chmod 600 "$HOME/.ssh/id_ed25519"
           ssh-keyscan -H "$VPS_HOST" >> "$HOME/.ssh/known_hosts"
-          scp index.html "$VPS_USER@$VPS_HOST:/var/www/html/index.html"
+          scp -r index.html about.html resources.html contact.html css js "$VPS_USER@$VPS_HOST:/var/www/html/"
